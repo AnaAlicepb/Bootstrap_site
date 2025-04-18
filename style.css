@@ -1,0 +1,76 @@
+body {
+    font-family: 'Merriweather', serif;
+    padding-top: 80px; /* Ajuste este valor conforme a altura da sua navbar */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold; 
+}
+
+.nav-link,
+h1, h2, h3, h4, h5, h6,
+.btn {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.navbar-nav .btn.btn-success { /* Seleciona o botão com as classes 'btn' e 'btn-success' dentro da navbar-nav */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição para cor de fundo e texto */
+}
+
+.navbar-nav .btn.btn-success:hover {
+    background-color: #5cb85c !important; /* Altera a cor de fundo no hover (verde mais claro - exemplo) */
+    color: white !important; /* Garante que o texto permaneça branco para contraste */
+}
+
+.navbar-nav .nav-link { /* Mantém a transição de cor para os outros links */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover { /* E o efeito de hover para os outros links */
+    color: #5cb85c !important; /* Cor de hover para os outros links */
+}
+
+.navbar-nav .active > .nav-link {
+    color: var(--success) !important; /* Mantém a cor de ativo */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background: none !important; /* Remove o fundo padrão */
+    border: none !important; /* Remove a borda padrão */
+    opacity: 1 !important; /* Garante que o ícone seja visível */
+    width: auto !important; /* Ajusta a largura ao conteúdo */
+    height: auto !important; /* Ajusta a altura ao conteúdo */
+}
+
+.carousel-control-prev {
+    left: 1rem; /* Ajuste a distância da borda esquerda */
+}
+
+.carousel-control-next {
+    right: 1rem; /* Ajuste a distância da borda direita */
+}
+.carousel-inner .carousel-item img {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra suave */
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3) !important; /* Fundo preto com 30% de opacidade */
+    padding: 1rem !important; /* Ajuste o preenchimento conforme necessário */
+    border-radius: 0.25rem !important; /* Mantenha ou ajuste o arredondamento */
+    opacity: 1 !important; /* Garante que o texto dentro seja totalmente visível */
+}
+
+.carousel-caption h5,
+.carousel-caption p,
+.carousel-caption .btn {
+    color: white !important; /* Garante que o texto e o botão sejam brancos para contraste */
+}
