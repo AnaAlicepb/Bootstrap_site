@@ -279,7 +279,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="card shadow-sm p-4 border-success">
-                        <form>
+                        <form class="reservation-form-bg">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="checkin">Data de Check-in</label>
@@ -307,6 +307,7 @@
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
+                                        <option value="4">4</option>
                                     </select>
                                 </div>
                             </div>
@@ -329,11 +330,14 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="mb-4 text-center text-success">Entre em Contato</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
+            <h2 class="mb-4 text-center text-success section-title">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-lg-6 map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28684.88497987948!2d-49.09548785!3d-26.91668485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df1ca1a19f1595%3A0x1717913035a5b49!2sBlumenau%2C+SC!5e0!3m2!1spt-BR!2sbr!4v1713476083345!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-lg-6 contact-form">
                     <div class="card shadow-sm p-4 border-success">
                         <form>
                             <div class="form-group">
@@ -359,14 +363,78 @@
             </div>
         </div>
     </section>
-    <footer class="py-4 bg-secondary text-white text-center">
+    <section id="chatbot-section">
+        <div class="chatbot-icon">
+            <img src="./img/Chatbot .jpg" alt="Chatbot">
+        </div>
+    
+        <div class="chatbot-window">
+            <div class="chatbot-header">
+                Chatbot Fazenda
+                <span class="chatbot-close">×</span>
+            </div>
+            <div class="chatbot-messages">
+                <div class="chatbot-message user-message">Olá!</div>
+                <div class="chatbot-message bot-message">Bem-vindo! Como posso ajudar?</div>
+            </div>
+            <div class="chatbot-input-area">
+                <input type="text" placeholder="Digite sua mensagem...">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="container-fluid bg-grey py-5">
         <div class="container">
-            <p class="mb-0">Hotel Fazenda Kastor &copy; 2025. Todos os direitos reservados.</p>
-            <p class="mb-0"><a href="#" class="text-white">Política de Privacidade</a> | <a href="#" class="text-white">Termos de Uso</a></p>
-            <p class="mb-0">Desenvolvido por Ana Alice Rodrigues</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo-part">
+                        <img src="./img/logo.png" alt="Logo Fazenda Kastor" class="w-75 logo-footer" >
+                        <p>Blumenau, Santa Catarina, Brasil</p>
+                        <p>Um lugar perfeito para relaxar e aproveitar a natureza.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6>Sobre a Fazenda</h6>
+                    <p>Explore a beleza de Blumenau com a Fazenda Kastor.</p>
+                    <a href="/sobre" class="btn-footer">Mais Informações</a>
+                    <a href="/contato" class="btn-footer">Entre em Contato</a>
+                </div>
+                <div class="col-md-2">
+                    <h6>Navegação</h6>
+                    <ul>
+                        <li> <a href="/">Home</a> </li>
+                        <li> <a href="/acomodacoes">Acomodações</a> </li>
+                        <li> <a href="/servicos">Serviços</a> </li>
+                        <li> <a href="/reservas">Reservas</a> </li>
+                        <li> <a href="/galeria">Galeria</a> </li>
+                        <li> <a href="/localizacao">Localização</a> </li>
+                        <li> <a href="/contato">Contato</a> </li>
+                        <li> <a href="/politica-privacidade">Política de Privacidade</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Newsletter</h6>
+                    <div class="social">
+                        <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                    <form class="form-footer my-3">
+                        <input type="email" placeholder="Seu email" name="email" required>
+                        <button type="submit">Inscrever-se</button>
+                    </form>
+                    <p>Receba novidades e ofertas exclusivas!</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="logo-part"> <p class="mb-0">Hotel Fazenda Kastor © 2025.</p>
+                        <p class="mb-0">Todos os direitos reservados.</p>
+                        <p class="mb-0">Desenvolvido por Ana Alice Rodrigues</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-
+    <script src="chatbot.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
